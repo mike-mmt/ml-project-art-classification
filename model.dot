@@ -1,0 +1,26 @@
+digraph G {
+concentrate=True;
+dpi=200;
+rankdir=TB;
+splines=ortho;
+node [shape=record];
+2194615767632 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>conv2d_2</b> (Conv2D)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 128, 128, 3)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 128, 128, 8)</b></font></td></tr></table>>, margin=0];
+2173270479104 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>max_pooling2d_2</b> (MaxPooling2D)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 128, 128, 8)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 64, 64, 8)</b></font></td></tr></table>>, margin=0];
+2174328258144 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>dropout_3</b> (Dropout)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 64, 64, 8)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 64, 64, 8)</b></font></td></tr></table>>, margin=0];
+2174328254592 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>conv2d_3</b> (Conv2D)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 64, 64, 8)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 64, 64, 16)</b></font></td></tr></table>>, margin=0];
+2194615161760 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>max_pooling2d_3</b> (MaxPooling2D)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 64, 64, 16)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 32, 32, 16)</b></font></td></tr></table>>, margin=0];
+2194615163104 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>dropout_4</b> (Dropout)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 32, 32, 16)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 32, 32, 16)</b></font></td></tr></table>>, margin=0];
+2194318596944 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>flatten_1</b> (Flatten)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 32, 32, 16)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 16384)</b></font></td></tr></table>>, margin=0];
+2194318994384 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>dense_2</b> (Dense)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 16384)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 256)</b></font></td></tr></table>>, margin=0];
+2194319503968 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>dropout_5</b> (Dropout)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 256)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 256)</b></font></td></tr></table>>, margin=0];
+2194319495712 [border=0, fontname=Helvetica, label=<<table border="0" cellborder="1" bgcolor="black" cellpadding="10"><tr><td colspan="2" bgcolor="black"><font point-size="16" color="white"><b>dense_3</b> (Dense)</font></td></tr><tr><td bgcolor="white"><font point-size="14">Input shape: <b>(None, 256)</b></font></td><td bgcolor="white"><font point-size="14">Output shape: <b>(None, 4)</b></font></td></tr></table>>, margin=0];
+2194615767632 -> 2173270479104  [penwidth=2];
+2173270479104 -> 2174328258144  [penwidth=2];
+2174328258144 -> 2174328254592  [penwidth=2];
+2174328254592 -> 2194615161760  [penwidth=2];
+2194615161760 -> 2194615163104  [penwidth=2];
+2194615163104 -> 2194318596944  [penwidth=2];
+2194318596944 -> 2194318994384  [penwidth=2];
+2194318994384 -> 2194319503968  [penwidth=2];
+2194319503968 -> 2194319495712  [penwidth=2];
+}

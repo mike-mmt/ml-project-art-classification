@@ -1,0 +1,6 @@
+images
+art_dataset
+ckpt
+models
+*.keras
+*.h5
