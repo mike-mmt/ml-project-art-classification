@@ -4,3 +4,4 @@ ckpt
 models
 *.keras
 *.h5
+!Art_Classification_four.keras
