@@ -2,6 +2,8 @@
 
 The goal of the project is to create a model that classifies images painted in 4 categories: abstract art, genre painting, landscape and portrait. The model was trained on about 60000 images - ~15000 images per category and during preprocessing they were resized to 128x128. Images come from the WikiArt database.
 
+The main jupyter notebook is called `Art-Classification-3.ipynb`.
+
 I also created a web app that uses this model to classify images. You can start it by running:
 
 `./app/backend > flask run`
